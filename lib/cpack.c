@@ -61,7 +61,7 @@ vpack (const char *     format,
             pack_str += sizeof (char *);
             break ;
         default:
-            goto error;
+            goto free_pack_str_base;
         }
     }
 
