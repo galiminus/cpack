@@ -37,8 +37,4 @@ unpack (char *          pack_str,
         const char *    format,
         ...);
 
-#define MAPPACK(s_name, members, pack)                                  \
-    struct __struct_##s_name members;                                   \
-    struct __struct_##s_name s_name = *(struct __struct_##s_name *)(pack)
-
 #endif /* __CPACK_H__ */
